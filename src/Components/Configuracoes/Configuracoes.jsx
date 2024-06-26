@@ -3,6 +3,7 @@ import { BarChart } from "@mui/x-charts/BarChart";
 import { useRef, useEffect, useState } from 'react';
 import ResizeObserver from 'resize-observer-polyfill';
 import NavBar from "../NavBar/NavBar";
+import { useNavigate } from "react-router-dom";
 
 
 const Configuracoes = () => {
@@ -27,6 +28,12 @@ const Configuracoes = () => {
             }
         };
     }, []);
+
+    const navigate = useNavigate();
+
+    const handleNavigation = () => {
+      navigate("/");
+    };
 
     return (
         <div className="configuracoes">
@@ -78,7 +85,7 @@ const Configuracoes = () => {
                 <div className="change-password">
                     <h2 className="title-config">Deseja sair?</h2>
                     <p className="text-config">Para trocar de conta clique aqui</p>
-                    <a href="/"><button className="button-config"> Sair </button></a>
+                    <a  onClick={handleNavigation} ><button className="button-config"> Sair </button></a>
                 </div>
 
 
