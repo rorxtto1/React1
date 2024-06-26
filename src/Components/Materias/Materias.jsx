@@ -13,6 +13,7 @@ import { Modal, Button, Typography, Box } from "@mui/material";
 import { useRef, useEffect, useState } from "react";
 import { BarChart } from "@mui/x-charts/BarChart";
 import ResizeObserver from 'resize-observer-polyfill';
+import { useNavigate } from "react-router-dom";
 
 const Materias = () => {
   const [open, setOpen] = useState(false);
@@ -45,6 +46,12 @@ const Materias = () => {
             }
         };
     }, []);
+
+    const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate("/flashcards");
+  };
 
   return (
     <div>
@@ -114,7 +121,7 @@ const Materias = () => {
                 Escolha seu tema
               </Typography>
                 <ul style={{ listStyleType: "none", marginTop: "20px", padding: 0, maxHeight: "260px", overflowY: "auto" }}>
-                  <a style={{textDecoration: "none", color: "black"}} href="/flashcards"><li style={{ borderBottom: "1px solid #ccc", paddingBottom: "5px", marginBottom: "5px" }}>Ossos</li> </a> 
+                  <a style={{textDecoration: "none", color: "black"}}  onClick={handleNavigation} ><li style={{ borderBottom: "1px solid #ccc", paddingBottom: "5px", marginBottom: "5px" }}>Ossos</li> </a> 
                   <a style={{textDecoration: "none", color: "black"}} href="#"><li style={{ borderBottom: "1px solid #ccc", paddingBottom: "5px", marginBottom: "5px" }}>Músculos</li>  </a>  
                   <a style={{textDecoration: "none", color: "black"}} href="#"><li style={{ borderBottom: "1px solid #ccc", paddingBottom: "5px", marginBottom: "5px" }}>Sistema Nervoso</li> </a> 
                   <a style={{textDecoration: "none", color: "black"}} href="#"><li style={{ borderBottom: "1px solid #ccc", paddingBottom: "5px", marginBottom: "5px" }}>Sistema Circulatório</li>  </a> 

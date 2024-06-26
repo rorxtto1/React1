@@ -1,6 +1,20 @@
 import "./NavBar.css";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate("/configuracoes");
+  };
+
+  const navigate1 = useNavigate();
+
+  const handleNavigation1 = () => {
+    navigate("/materias");
+  };
+  
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{}}>
       <div className="container-fluid">
@@ -21,11 +35,11 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto" style={{marginRight: "3rem"}}>
             <li className="nav-item">
-            <a className="nav-link" href="/materias">Matérias</a>
+            <a className="nav-link"  onClick={handleNavigation1} >Matérias</a>
               
             </li>
             <li className="nav-item">
-            <a className="nav-link" href="/configuracoes">Configurações</a>
+            <a className="nav-link"  onClick={handleNavigation} >Configurações</a>
             </li>
           </ul>
         </div>
