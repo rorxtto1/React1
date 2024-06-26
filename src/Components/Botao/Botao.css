@@ -1,0 +1,33 @@
+.botao {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 30px;
+gap: 10px;
+
+
+width: 122px;
+height: 37px;
+
+
+background: #C7F2ED;
+border-radius: 30px;
+
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+color: #03451E;
+
+border: none;
+
+margin-top: 30px;
+
+}

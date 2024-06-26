@@ -1,0 +1,112 @@
+.FlashCards-Principal{
+  background-color: #DFEAE9;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+
+.card-front-question{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 180%;
+  text-align: center;
+  color: #252641;
+  padding-top: 1rem;
+}
+
+.flip-card-text{
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: #696984;
+
+
+}
+
+.card-front-text{
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 275;
+  font-size: 1.5rem;
+  line-height: 180%;
+  text-align: center;
+  color: #252641;
+  padding-top: 1rem;
+
+
+}
+
+.wrap-flashcards {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 700px; /* Limita a altura máxima para telas menores */
+  width: 85vw;
+  height: 90vh;
+  border-radius: 30px;
+  background-color: white;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  
+
+}
+
+.card-front {
+
+  width: 65vw;
+  height: 55vh;
+  background: rgba(73, 187, 189, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  overflow-y: auto; /* Adiciona a rolagem automática na vertical */
+
+
+}
+
+.button-flashcards {
+
+  width: 13rem;
+  height: 4.5rem;
+  border-radius: 60px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1.5rem;
+
+}
+
+.container-buttons{
+  display: flex;
+  flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha */
+  justify-content: center;
+
+}
+
+.next-card{
+  width: 75vw;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+

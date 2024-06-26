@@ -1,0 +1,83 @@
+.materias{
+  width: 100%;
+  height: 175vh;
+  background-color: #DFEAE9;
+
+}
+
+.container-materias{
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.cards-group {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-materias{
+width: 100%;
+height: 15vh;
+background-color: #00958C;
+}
+
+@media screen and (max-width: 480px) {
+  .materias{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Tablets (portrait) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .materias{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Tablets (landscape) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .materias{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Laptops e Desktops pequenos */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .materias{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Laptops e Desktops médios */
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+  .materias{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Laptops e Desktops grandes */
+@media screen and (min-width: 1441px) {
+  .materias{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Televisores (HD e superiores) */
+@media screen and (min-width: 1920px) {
+  .materias{
+    height: 100%;
+    width: 100%;
+  }
+}
+
