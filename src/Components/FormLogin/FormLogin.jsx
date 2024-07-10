@@ -11,7 +11,7 @@ const FormLogin = () => {
     const [senha, setSenha] = useState("");
 
     {/* printando no console */ }
-    const handleSubmit = (event) => {
+    const handleSubmit = (event) => {v
         event.preventDefault();
         console.log(senha);
         console.log(email)

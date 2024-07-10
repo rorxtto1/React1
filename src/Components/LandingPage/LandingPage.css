@@ -1,7 +1,7 @@
 .topSection {
 
     width: 100%;
-    height: 75vh;
+    min-height: 75vh;
     background: #81DAD0;
     border-bottom-left-radius: 30% 5%;
     border-bottom-right-radius: 30% 5%;
@@ -46,7 +46,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size:  3rem;
+    font-size: 2.5vw;
     line-height: 5rem;
 
     color: #f7e75b;
@@ -60,7 +60,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5vw;
     line-height: 3rem;
 
     color: #f7e75b;
@@ -87,7 +87,7 @@
 .topSection1 {
 
     width: 100%;
-    height: 105vh;
+    min-height: 105vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,6 +111,7 @@
     align-items: center;
     margin-top: 1rem;
     width: 75%;
+    flex-wrap: wrap;
 }
 
 
@@ -170,7 +171,7 @@
 }
 
 .topSection2 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -315,127 +316,31 @@ border-radius: 99px;
     background-color: #00958C;
 }
 
-/* Para telas menores que 768px */
-@media screen and (max-width: 768px) {
-    .wrap-container-top {
-        width: 90%; /* Ajuste a largura conforme necessário */
-    }
-
+@media (max-width: 1200px) {
+    .highlight-container-top,
     .title-container-top {
-        font-size: 2.5rem;
-        line-height: 4rem;
-    }
-
-    .highlight-container-top {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-    }
-
-    .text-container-top {
-        font-size: 1.5rem;
-        line-height: 150%;
-    }
-
-    .container-top {
-        padding-top: 3rem;
-    }
-
-    .topSection1 header {
-        width: 90%;
-    }
-
-    .container-top1 {
-        width: 90%;
-    }
-
-    .highlight-container-top1 {
-        font-size: 3rem;
-    }
-
-    .text-container-top1 {
-        font-size: 1.2rem;
-    }
-
-    .card {
-        width: 100%;
-        height: auto;
-    }
-
-    .price {
-        font-size: 36px;
-        line-height: 48px;
-    }
-
-    .description {
-        font-size: 12px;
-    }
-
-    .icon {
-        font-size: 16px;
-        line-height: 28px;
-    }
-
-    .btn {
-        width: 90%;
+        font-size: 3.5vw;
     }
 }
 
-/* Para telas menores que 480px */
-@media screen and (max-width: 480px) {
+@media (max-width: 992px) {
+    .highlight-container-top,
     .title-container-top {
-        font-size: 2rem;
-        line-height: 3.5rem;
-    }
-
-    .highlight-container-top {
-        font-size: 2rem;
-        line-height: 2rem;
-    }
-
-    .text-container-top {
-        font-size: 1.2rem;
-    }
-
-    .container-top {
-        padding-top: 2rem;
-    }
-
-    .topSection1 header {
-        width: 95%;
-    }
-
-    .container-top1 {
-        width: 95%;
-    }
-
-    .highlight-container-top1 {
-        font-size: 2.5rem;
-    }
-
-    .text-container-top1 {
-        font-size: 1rem;
-    }
-
-    .card {
-        width: 100%;
-        height: auto;
-    }
-
-    .price {
-        font-size: 32px;
-        line-height: 44px;
-    }
-
-    .description {
-        font-size: 12px;
-    }
-
-    .icon {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .btn {
-        width: 90%;
+        font-size: 3.5vw;
     }
 }
+
+@media (max-width: 768px) {
+    .highlight-container-top,
+    .title-container-top {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .highlight-container-top,
+    .title-container-top {
+        font-size: 3.5vw;
+    }
+}
+

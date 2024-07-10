@@ -283,7 +283,11 @@ const LandingPage = () => {
           Nossos Planos
         </h1>
 
-        <div style={{ display: "flex" }}>
+        <div style={{  display: "flex",
+           justifyContent: "center",
+           alignItems: "center",
+           flexWrap: "wrap",
+        }}>
           <div className="card">
             <div style={{ paddingTop: "20px" }}>
               <div className="plans-title">
@@ -460,6 +464,8 @@ const LandingPage = () => {
       </section>
 
       <section className="footer-LandingPage"></section>
+
+
     </div>
   );
 };
