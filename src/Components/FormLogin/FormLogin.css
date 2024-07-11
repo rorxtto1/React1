@@ -1,4 +1,4 @@
-.container {
+.FormLogin {
     position: absolute;
     width: 50%;
     height: 100%;
@@ -8,6 +8,7 @@
     justify-content: space-evenly;
     align-items: center;
     min-height: 100vh;
+    overflow: hidden;
 
 }
 
@@ -88,6 +89,8 @@
 
 
 
+
+
 @media screen and (max-width: 1215px) {
 
 
@@ -127,6 +130,13 @@
 
 @media screen and (max-width: 620px) {
 
+    .question{
+        font-size: 0.75rem;
+    }
+
+    .link{
+        font-size: 0.75rem;
+    }
    
 
     .title {

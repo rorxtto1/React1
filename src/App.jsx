@@ -12,7 +12,7 @@ function App() {
     <div className="app">
       <Router>
         <Routes>
-          <Route path="/" element={<Login titulo="NOME FLASH CARDS" texto="Desbloqueie o conhecimento com nossos flash cards inteligentes." />} />
+          <Route path="/" element={<Login/>} />
           <Route path="/landing-page" element={<LandingPage />} />
           <Route path="/materias" element={<Materias />} />
           <Route path="/flashcards" element={<FlashCards />} />

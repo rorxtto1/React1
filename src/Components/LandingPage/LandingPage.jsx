@@ -45,6 +45,7 @@ const LandingPage = () => {
     flex: "none",
     order: 0,
     flexGrow: 0,
+    marginBottom: 10
   };
 
   const scrollToSection = (sectionId) => {

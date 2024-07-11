@@ -1,18 +1,13 @@
 .fundo {
-    box-sizing: border-box;
-    position: absolute;
     width: 50%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
+    height: 100vh;
     background: linear-gradient(180deg, #81DAD0 0%, #81DAD0 61.1%, rgba(0, 255, 87, 0.266667) 100%, rgba(0, 120, 41, 0.266667) 100.01%);
-    border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    overflow: hidden; /* ou auto, ou scroll */
 }
 
 .Titulo {

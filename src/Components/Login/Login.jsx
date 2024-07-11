@@ -1,10 +1,10 @@
 
-import PropTypes from "prop-types";
+
 import "./Login.css";
 import Botao from "../Botao/Botao";
 import FormLogin from "../FormLogin/FormLogin";
 
-const Login = (props) => {
+const Login = () => {
 
 
   {/* estilo do botao passado por props */ }
@@ -15,7 +15,7 @@ const Login = (props) => {
     alignItems: 'center',
     padding: '8px 30px',
     gap: '10px',
-    width: '122px',
+    width: '140px',
     height: '37px',
     background: '#C7F2ED',
     borderRadius: '30px',
@@ -35,21 +35,21 @@ const Login = (props) => {
 
   return (
     /* div pai */
-    <div>
+    <div className="fundo">
 
       {/* estilo de fundo */}
-      <article className="fundo">
+  
         {/* div que engloba as tags para centralizar */}
         <div className="principal">
           {/* tags de titulo, subtitulo e botao */}
-          <h1 className="Titulo"> {props.titulo} </h1>
-          <p className="Texto"> {props.texto}</p>
-          <Botao botao="Acessar" estilo={estiloBotao} rota="/landing-page" />
-          {/* tags de titulo, subtitulo e botao */}
+          <h1 className="Titulo">NOME FLASH CARDS</h1>
+          <p className="Texto"> Desbloqueie o conhecimento com nossos flash cards inteligentes.</p>
+          <Botao botao="Assine Já" estilo={estiloBotao} rota="/landing-page" />
         </div>
-      </article>
-      {/* Componente de Formulario de Login */}
-      <FormLogin />
+
+        <FormLogin/>
+
+ 
 
     </div>
 
@@ -57,9 +57,5 @@ const Login = (props) => {
   );
 };
 
-Login.propTypes = {
-  titulo: PropTypes.string.isRequired,
-  texto: PropTypes.string.isRequired,
-};
 
 export default Login;
