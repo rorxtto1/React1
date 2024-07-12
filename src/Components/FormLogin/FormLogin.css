@@ -151,3 +151,17 @@
         width: 100%;
     }
 }
+
+@media (max-width: 376px) {
+    .form-control {
+        width: 40vw;
+    }
+
+    .question{
+        font-size: 0.65rem;
+    }
+
+    .link{
+        font-size: 0.65rem;
+    }
+}

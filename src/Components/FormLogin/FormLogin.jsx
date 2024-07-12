@@ -25,7 +25,7 @@ const FormLogin = () => {
         alignItems: "center",
         padding: "8px 30px",
         gap: "10px",
-        width: "192px",
+        width: "11rem",
         height: "49px",
         background: "#C7F2ED",
         borderRadius: "30px",
