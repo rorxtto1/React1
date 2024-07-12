@@ -1,3 +1,4 @@
+
 .fundo {
     width: 50%;
     height: 100vh;
@@ -43,4 +44,24 @@
     text-align: left;
     max-width: 600px;
     padding: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .fundo{
+        width: 100%;
+    }
+
+    .principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Texto,
+    .Titulo{
+        text-align: center;
+    }
 }

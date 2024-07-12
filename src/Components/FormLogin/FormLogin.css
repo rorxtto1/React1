@@ -1,14 +1,13 @@
 .FormLogin {
     position: absolute;
     width: 50%;
-    height: 100%;
-    right: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    min-height: 100vh;
     overflow: hidden;
+    right: 0;
 
 }
 
@@ -95,7 +94,7 @@
 
 
     .title {
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 
     .highlight {
@@ -103,7 +102,7 @@
     }
 
     .form-control {
-      width: 100%;
+      width: 45vw;
     }
 }
 
@@ -115,53 +114,19 @@
         /* Removendo a posição superior */
     }
 
+    .FormLogin{
+        width: 100%;
+        position: static;
+    }
+
     .title {
-        font-size: 2.5vw;
+        font-size: 5vw;
     }
 
     .highlight {
-        font-size: 4.5vw;
+        font-size: 7vw;
     }
 
-    .form-control {
-        width: 100%;
-    }
+
 }
 
-@media screen and (max-width: 620px) {
-
-    .question{
-        font-size: 0.75rem;
-    }
-
-    .link{
-        font-size: 0.75rem;
-    }
-   
-
-    .title {
-        font-size: 2.5vw;
-    }
-
-    .highlight {
-        font-size: 4.5vw;
-    }
-
-    .form-control {
-        width: 100%;
-    }
-}
-
-@media (max-width: 376px) {
-    .form-control {
-        width: 40vw;
-    }
-
-    .question{
-        font-size: 0.65rem;
-    }
-
-    .link{
-        font-size: 0.65rem;
-    }
-}

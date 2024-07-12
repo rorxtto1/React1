@@ -34,11 +34,16 @@ const Login = () => {
   };
 
   return (
-    /* div pai */
-    <div className="fundo">
 
-      {/* estilo de fundo */}
-  
+    <div className="container-login">
+      <div>
+        <FormLogin />
+      </div>
+
+      <div className="fundo">
+
+        {/* estilo de fundo */}
+
         {/* div que engloba as tags para centralizar */}
         <div className="principal">
           {/* tags de titulo, subtitulo e botao */}
@@ -46,12 +51,10 @@ const Login = () => {
           <p className="Texto"> Desbloqueie o conhecimento com nossos flash cards inteligentes.</p>
           <Botao botao="Assine Já" estilo={estiloBotao} rota="/landing-page" />
         </div>
-
-        <FormLogin/>
-
- 
-
+      </div>
     </div>
+
+
 
 
   );
