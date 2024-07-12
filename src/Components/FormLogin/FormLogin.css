@@ -127,6 +127,10 @@
         font-size: 9vw;
     }
 
+    .form-control {
+        width: 90vw;
+    }
+
 
 }
 
