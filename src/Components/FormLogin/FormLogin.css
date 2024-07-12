@@ -120,13 +120,19 @@
     }
 
     .title {
-        font-size: 5vw;
+        font-size: 6.5vw;
     }
 
     .highlight {
-        font-size: 7vw;
+        font-size: 9vw;
     }
 
 
+}
+
+@media screen and (max-width: 550px) {
+    .form-control{
+        width: 90vw;
+    }
 }
 
