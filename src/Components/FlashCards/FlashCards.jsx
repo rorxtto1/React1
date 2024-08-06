@@ -104,7 +104,6 @@ const FlashCards = () => {
         </div>
         <div className="next-card">
           <a
-            href="#"
             style={{
               fontFamily: "Poppins",
               fontStyle: "normal",

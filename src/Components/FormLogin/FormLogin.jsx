@@ -79,7 +79,7 @@ const FormLogin = () => {
                             className="form-control"
                             id="exampleInputEmail1"
                             aria-describedby="emailHelp"
-                            onChange={(e) => setEmail(e.target.value)} /* capturando valor atraves do evento onChange */
+                            onChange={(e) => setEmail(e.target.value)} /* capturando valor atraves do evento onChandge */
                         />
                     </div>
 
